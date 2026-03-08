@@ -1,0 +1,29 @@
+cz9T4e2L1uqieiX155Lx
+
+
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+
+git init
+git config --global user.name "oscarlmjr"
+git config --global user.email "oscarlmjr@gmailcom"
+
+git remote add origin git@github.com:oscarlmjr/Section_11__Django_corn_Python___Primeiro_Deploy__Linux_.git
+git remote -v
+git remote set-url origin git@github.com:oscarlmjr/Section_11__Django_corn_Python___Primeiro_Deploy__Linux_.git
+git push --set-upstream --force origin main
+git pull origin
+
+git push -u origin main
+
+ssh-keygen
+/c/Users/oscar/.ssh/oscarlmjr_note
+
+eval $(ssh-agent)
+ssh-add ~/.ssh/oscarlmjr_note
+
+
+python -m venv .venv
+.venv/Scripts/activate
+pip install django
+pip install pillow
+python manage.py runserver
