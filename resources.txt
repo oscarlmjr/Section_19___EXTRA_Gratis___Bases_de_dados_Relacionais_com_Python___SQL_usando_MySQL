@@ -11,13 +11,12 @@ git remote add origin git@github.com:oscarlmjr/Section_11__Django_corn_Python___
 git remote -v
 git remote set-url origin git@github.com:oscarlmjr/Section_11__Django_corn_Python___Primeiro_Deploy__Linux_.git
 git push --set-upstream --force origin main
-git pull origin
 
+git pull origin
 git push -u origin main
 
 ssh-keygen
 /c/Users/oscar/.ssh/oscarlmjr_note
-
 eval $(ssh-agent)
 ssh-add ~/.ssh/oscarlmjr_note
 
