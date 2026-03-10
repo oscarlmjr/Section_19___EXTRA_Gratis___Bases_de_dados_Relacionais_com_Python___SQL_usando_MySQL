@@ -1,4 +1,3 @@
-version: "3"
 services: 
   mysql_knex:
     container_name: mysql_knex
