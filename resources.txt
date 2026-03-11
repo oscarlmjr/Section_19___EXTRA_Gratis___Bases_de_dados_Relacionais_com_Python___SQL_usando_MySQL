@@ -1,6 +1,5 @@
 cz9T4e2L1uqieiX155Lx
 
-
 Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 
 git init
@@ -22,9 +21,13 @@ ssh-add ~/.ssh/oscarlmjr_note
 ssh-keygen
 /c/Users/oscar/.ssh/oscarlmjr_note
 
-
 python -m venv .venv
 .venv/Scripts/activate
 pip install django
 pip install pillow
 python manage.py runserver
+
+sudo apt update
+sudo apt install python3-venv -y
+python3 -m venv venv
+source venv/bin/activate
